@@ -94,6 +94,14 @@
 [/*.liebao.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 
+# 国内CDN/云厂商
+[/*.cdn.aliyuncs.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.myqcloud.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.qcloudcdn.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.bytecdn.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.volccdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
 # ==========================================
 # 苹果服务 - 使用国内 DNS（避免 CDN 调度问题）
 # ==========================================
@@ -106,6 +114,11 @@
 [/*.apple-dns.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.push.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.gc.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.itunes.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.apps.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.api.apple-cloudkit.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.cdn-apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.appleusercontent.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 
 # ==========================================
@@ -120,6 +133,10 @@
 [/*.onedrive.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.live.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.outlook.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.windowsupdate.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.update.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.delivery.mp.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
 
 
 # ==========================================
@@ -179,6 +196,8 @@
 [/*.googlevideo.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.googleusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.ggpht.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.google.cn/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.recaptcha.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 # Meta 系
 [/*.facebook.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
@@ -190,6 +209,10 @@
 [/*.twitter.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.twimg.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.x.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+
+# Telegram
+[/*.t.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.telegram-cdn.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 
 # 微软国际服务
 [/*.bing.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -217,6 +240,8 @@
 # ==========================================
 [/*.netflix.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.nflximg.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.nflximg.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.nflxext.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.disney-plus.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.hulu.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.hbomax.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
