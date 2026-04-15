@@ -218,6 +218,8 @@
 # 默认上游 DNS（未被上述规则匹配的域名）
 # Cloudflare 优先（延迟最低），Quad9 第二（有恶意过滤），Google 备用
 # ==========================================
+https://dns.alidns.com/dns-query
+https://doh.pub/dns-query
 https://cloudflare-dns.com/dns-query
 https://dns.quad9.net/dns-query
 https://dns.google/dns-query
