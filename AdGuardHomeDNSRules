@@ -126,6 +126,9 @@
 [/*.github.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.raw.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.github.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubapp.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubstatus.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
 # ==========================================
