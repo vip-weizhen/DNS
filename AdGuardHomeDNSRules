@@ -16,6 +16,10 @@
 # 国内顶级域名
 [/*.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.中国/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.net.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.gov.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.edu.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 # 主流互联网公司
 [/*.qq.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
