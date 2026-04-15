@@ -5,7 +5,7 @@
 # 2. 国际开发资源（npm/pypi/docker 等）改为海外 DNS
 # 3. 新增京东、拼多多、字节飞书、快手、阿里云、腾讯云、国内银行等
 # 4. 新增苹果推送/GC 服务子域名
-# 5. 默认上游顺序优化：Cloudflare 优先，Quad9 第二
+# 5. 默认上游
 # ==========================================
 
 
@@ -173,6 +173,8 @@
 [/*.youtube.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.ytimg.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.googlevideo.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.googleusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.ggpht.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 # Meta 系
 [/*.facebook.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
@@ -209,6 +211,9 @@
 # ==========================================
 # 流媒体服务（海外版）
 # ==========================================
+[/*.netflix.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.nflximg.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.disney-plus.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.hulu.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.hbomax.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.max.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
