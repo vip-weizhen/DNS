@@ -211,6 +211,7 @@
 [/*.x.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 
 # Telegram
+[/*.telegram.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.t.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.telegram-cdn.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 
@@ -225,7 +226,6 @@
 [/*.nflxvideo.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.spotify.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.discord.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.telegram.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.zoom.us/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.dropbox.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.cloudflare.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
