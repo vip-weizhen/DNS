@@ -222,8 +222,6 @@
 
 # 其他国际常用
 [/*.reddit.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.netflix.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.nflxvideo.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.spotify.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.discord.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.zoom.us/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
@@ -238,6 +236,8 @@
 # ==========================================
 # 流媒体服务（海外版）
 # ==========================================
+[/*.netflix.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.nflxvideo.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.netflix.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.nflximg.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.nflximg.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
