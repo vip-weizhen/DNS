@@ -257,19 +257,19 @@
 # ==========================================
 # 流媒体服务（海外版）
 # ==========================================
-[/*.netflix.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.nflxvideo.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.netflix.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.nflximg.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.nflximg.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.nflxext.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.disney-plus.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.hulu.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.hbomax.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.max.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.disneyplus.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.primevideo.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.twitch.tv/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.netflix.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflxvideo.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.netflix.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflximg.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflximg.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflxext.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.disney-plus.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.hulu.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.hbomax.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.max.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.disneyplus.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.primevideo.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.twitch.tv/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 
 
 # ==========================================
