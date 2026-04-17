@@ -155,7 +155,7 @@
 # ==========================================
 # Steam/游戏平台 - 使用国内 DNS（下载加速）
 # ==========================================
-[/steamcommunity.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.steamcommunity.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steampowered.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steamstatic.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.epicgames.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
