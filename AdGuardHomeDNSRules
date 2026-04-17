@@ -4,7 +4,7 @@
 
 
 # ==========================================
-# 国内网站 - 使用阿里/腾讯 DoH（低延迟，准确解析）
+# 国内网站
 # ==========================================
 
 # 国内顶级域名
@@ -97,7 +97,7 @@
 
 
 # ==========================================
-# 苹果服务 - 使用国内 DNS（避免 CDN 调度问题）
+# 苹果服务
 # ==========================================
 [/*.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.icloud.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -116,7 +116,7 @@
 
 
 # ==========================================
-# 微软服务 - 使用国内 DNS（Windows 更新加速）
+# 微软服务
 # ==========================================
 [/*.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.windows.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -134,7 +134,7 @@
 
 
 # ==========================================
-# GitHub - 使用海外 DNS（统一，防污染）
+# GitHub
 # ==========================================
 [/*.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.githubassets.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -147,7 +147,7 @@
 
 
 # ==========================================
-# Steam/游戏平台 - 使用国内 DNS（下载加速）
+# Steam/游戏平台
 # ==========================================
 [/*.steamcommunity.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steampowered.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -165,7 +165,7 @@
 
 
 # ==========================================
-# 开发/技术资源 - 使用海外 DNS（服务器在境外，国内解析次优）
+# 开发/技术资源
 # ==========================================
 [/*.npmjs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.pypi.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -182,7 +182,7 @@
 
 
 # ==========================================
-# 国际常用服务 - 使用海外 DNS（防污染，保隐私）
+# 国际常用服务
 # ==========================================
 
 # Google 系
@@ -237,7 +237,7 @@
 [/*.discord.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.tumblr.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.pinterest.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.medium.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.medium.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.quora.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 
 # 国际邮箱
@@ -286,7 +286,7 @@
 
 
 # ==========================================
-# 默认上游 DNS（未被上述规则匹配的域名）
+# 默认上游 DNS
 # ==========================================
 https://dns.alidns.com/dns-query
 https://doh.pub/dns-query
