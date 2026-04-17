@@ -175,6 +175,10 @@
 [/*.nodejs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.python.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.rubygems.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.gitlab.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.bitbucket.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.vercel.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.netlify.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
 # ==========================================
@@ -260,10 +264,7 @@
 [/*.imdb.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.gitlab.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.bitbucket.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.vercel.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.netlify.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+
 
 
 # ==========================================
