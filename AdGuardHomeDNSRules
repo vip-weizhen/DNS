@@ -221,16 +221,25 @@
 [/*.skype.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 # 其他国际常用
+[/*.openai.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.oaistatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.amazonaws.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.awsstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.reddit.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.spotify.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.discord.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.zoom.us/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.dropbox.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.cloudflare.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.cloudfront.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cloudflare-dns.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.workers.dev/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.pages.dev/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
 [/*.adobe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.wikipedia.org/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.imdb.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
 # ==========================================
