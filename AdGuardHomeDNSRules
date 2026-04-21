@@ -279,7 +279,7 @@ https://dns.quad9.net/dns-query
 https://dns.google/dns-query
 https://dns.opendns.com/dns-query
 # IPv6
-[2400:3200::1]              # 阿里 IPv6
-[2402:4e00::]               # 腾讯 IPv6
-[2606:4700:4700::1111]      # Cloudflare IPv6
-[2001:4860:4860::8888]      # Google IPv6
+[2400:3200::1]
+[2402:4e00::]
+[2606:4700:4700::1111]
+[2001:4860:4860::8888]
