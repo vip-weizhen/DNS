@@ -1,9 +1,4 @@
 # ==========================================
-# AdGuard Home 上游 DNS 配置
-# ==========================================
-
-
-# ==========================================
 # 国内网站
 # ==========================================
 
@@ -95,10 +90,7 @@
 [/*.bytecdn.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.volccdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-
-# ==========================================
 # 苹果服务
-# ==========================================
 [/*.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.icloud.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.apple.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -114,10 +106,7 @@
 [/*.cdn-apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.appleusercontent.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-
-# ==========================================
 # 微软服务
-# ==========================================
 [/*.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.windows.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.azure.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -132,10 +121,7 @@
 [/*.delivery.mp.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 
-
-# ==========================================
 # GitHub
-# ==========================================
 [/*.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.githubassets.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.github.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -145,10 +131,7 @@
 [/*.githubapp.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.githubstatus.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
-
-# ==========================================
 # Steam/游戏平台
-# ==========================================
 [/*.steamcommunity.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steampowered.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steamstatic.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -163,10 +146,7 @@
 [/*.miHoYo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.hoyoverse.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-
-# ==========================================
 # 开发/技术资源
-# ==========================================
 [/*.npmjs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.pypi.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.docker.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -272,10 +252,7 @@
 [/*.replit.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
-
-# ==========================================
 # 流媒体服务（海外版）
-# ==========================================
 [/*.netflix.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.nflxvideo.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.netflix.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
