@@ -290,6 +290,7 @@
 # ==========================================
 https://dns.alidns.com/dns-query
 https://doh.pub/dns-query
+https://doh.360.cn/dns-query
 https://cloudflare-dns.com/dns-query
 https://dns.quad9.net/dns-query
 https://dns.google/dns-query
