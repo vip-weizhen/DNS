@@ -179,6 +179,7 @@
 [/*.bitbucket.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.vercel.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.netlify.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.ipfs.tech/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
 # ==========================================
@@ -257,6 +258,7 @@
 [/*.cloudfront.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.workers.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.pages.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cloudflare-ipfs.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 # 其他
 [/*.adobe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
