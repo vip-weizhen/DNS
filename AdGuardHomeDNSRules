@@ -264,6 +264,10 @@
 [/*.imdb.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.pixiv.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.v2ex.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.duolingo.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.replit.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
 
