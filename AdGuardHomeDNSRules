@@ -1,96 +1,237 @@
-# ==========================================
-# 国内网站
-# ==========================================
+# ============================================================
+# AdGuard Home 上游 DNS 分流配置
+# ============================================================
+# 适用版本：AdGuard Home v0.107+
+# 最后更新：2025-05
+# 开源地址：https://github.com/vip-weizhen/DNS
+#
+# 分流策略说明：
+#   1. 国内域名        → 阿里DNS(主) + 腾讯DNSPod(备)   延迟低、无污染
+#   2. GitHub/开发资源 → Google DNS + Cloudflare         抗污染能力强
+#   3. 隐私敏感服务    → Quad9 + Cloudflare              注重隐私、过滤恶意
+#   4. Meta系服务      → OpenDNS + Cloudflare            过滤能力强
+#   5. 未匹配域名      → 默认上游兜底（见文件末尾）
+#
+# 使用方法：
+#   将本文件内容粘贴到 AdGuard Home → 设置 → DNS设置 → 上游DNS服务器
+#
+# 测试配置是否生效：
+#   nslookup baidu.com 223.5.5.5
+#   nslookup google.com 8.8.8.8
+# ============================================================
 
+
+# ============================================================
 # 国内顶级域名
+# ============================================================
 [/*.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.中国/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.net.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.gov.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.edu.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.org.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.ac.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 主流互联网公司
+
+# ============================================================
+# 腾讯系
+# ============================================================
 [/*.qq.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
 [/*.tencent.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
 [/*.tencentcloud.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
 [/*.weixin.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
 [/*.wechat.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.weiyun.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.dnspod.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.coding.net/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+[/*.qcloud.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
+
+
+# ============================================================
+# 阿里系
+# ============================================================
 [/*.alibaba.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.alicdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.aliyun.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.alipay.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.taobao.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.tmall.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.alipay.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.1688.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.dingtalk.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.amap.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.gaode.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.ele.me/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.cdn.aliyuncs.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 百度系
+# ============================================================
 [/*.baidu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.bdstatic.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.baiducontent.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.bcebos.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 字节跳动系
+# ============================================================
 [/*.bytedance.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.bytecdn.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.volccdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.volces.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.douyin.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.toutiao.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.ixigua.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.capcut.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.feishu.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.larkoffice.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 视频平台
+# ============================================================
 [/*.bilibili.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.bilivideo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.biliimg.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.youku.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.iqiyi.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.qiyi.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.mgtv.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.mango.tv/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.hunantv.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.pptv.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 音乐平台
+# ============================================================
+[/*.kugou.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.kuwo.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.netease.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.163.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.126.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.qmcdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 社交/内容平台
+# ============================================================
+[/*.weibo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.sina.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.sinaimg.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.zhihu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.xiaohongshu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.kuaishou.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.gifshow.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.meituan.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.dianping.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.ele.me/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.didiglobal.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.sohu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 电商平台
+# ============================================================
 [/*.jd.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.360buy.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.jdcloud.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.jd.hk/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.pinduoduo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.mi.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.huawei.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.oppo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.vivo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.sina.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.weibo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.sohu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.163.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.netease.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.126.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.youku.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.iqiyi.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.v.qq.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
-[/*.xunlei.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.kugou.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.kuwo.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.yangkeduo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 生活服务
+# ============================================================
+[/*.meituan.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.dianping.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.didiglobal.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.didichuxing.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.sf-express.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.cainiao.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 招聘平台
+# ============================================================
+[/*.zhaopin.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.51job.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.liepin.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.boss.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.zhipin.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 国内开发者/技术社区
+# ============================================================
 [/*.csdn.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.jianshu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.juejin.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.oschina.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.segmentfault.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.v2ex.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 国内银行
-[/*.cmbc.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+# ============================================================
+# 学术/知识
+# ============================================================
+[/*.cnki.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.wanfangdata.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.wqxuetang.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 手机厂商
+# ============================================================
+[/*.mi.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.miui.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.huawei.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.hicloud.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.oppo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.vivo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.oneplus.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.realme.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+
+
+# ============================================================
+# 国内银行/金融
+# ============================================================
 [/*.icbc.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.ccb.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.boc.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.abchina.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.bankcomm.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.cmbchina.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.cmbc.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.spdb.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.citicbank.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.eastmoney.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.10jqka.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.xueqiu.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 国内常用软件/服务更新域名
+
+# ============================================================
+# 国内安全/办公软件
+# ============================================================
 [/*.360.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.360safe.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.kingsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.wps.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.2345.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.liebao.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.wps.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 
-# 国内CDN/云厂商
-[/*.cdn.aliyuncs.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+# ============================================================
+# 国内CDN / 云厂商
+# ============================================================
 [/*.myqcloud.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
 [/*.qcloudcdn.com/] https://doh.pub/dns-query https://dns.alidns.com/dns-query
-[/*.bytecdn.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.volccdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.qiniucdn.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.qbox.me/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.ucloud.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 苹果服务
+
+# ============================================================
+# 苹果服务（国内节点优化）
+# ============================================================
 [/*.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.icloud.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.apple.com.cn/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -98,15 +239,13 @@
 [/*.mzstatic.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.aaplimg.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.apple-dns.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.push.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.gc.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.itunes.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.apps.apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.api.apple-cloudkit.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.cdn-apple.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.appleusercontent.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 微软服务
+
+# ============================================================
+# 微软服务（国内访问，走国内DNS解析更快）
+# ============================================================
 [/*.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.windows.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.azure.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -117,21 +256,14 @@
 [/*.live.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.outlook.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.windowsupdate.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.update.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.delivery.mp.microsoft.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.bing.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.linkedin.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.skype.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
 
-# GitHub
-[/*.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubassets.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.github.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.raw.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.github.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubapp.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubstatus.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-
-# Steam/游戏平台
+# ============================================================
+# Steam / 游戏平台
+# ============================================================
 [/*.steamcommunity.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steampowered.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.steamstatic.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
@@ -141,32 +273,57 @@
 [/*.blizzard.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.battlenet.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.nexon.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.pvp.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.riotgames.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
-[/*.miHoYo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.pvp.net/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.mihoyo.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 [/*.hoyoverse.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
+[/*.hoyolab.com/] https://dns.alidns.com/dns-query https://doh.pub/dns-query
 
-# 开发/技术资源
+
+# ============================================================
+# GitHub（走国际DNS，抗污染）
+# ============================================================
+[/*.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubassets.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.github.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.github.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubapp.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.githubstatus.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.pkg.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.copilot.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+
+
+# ============================================================
+# 开发工具 / 包管理
+# ============================================================
 [/*.npmjs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.npmjs.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.pypi.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.docker.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.golang.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.go.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.apache.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.nodejs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.python.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.rubygems.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.gradle.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.maven.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.sonatype.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.jetbrains.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.gitlab.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.bitbucket.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.vercel.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.netlify.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.replit.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cursor.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.ipfs.tech/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.huggingface.co/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
-# ==========================================
-# 国际常用服务
-# ==========================================
-
+# ============================================================
 # Google 系
+# ============================================================
 [/*.google.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.googleapis.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.gstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
@@ -177,107 +334,162 @@
 [/*.ggpht.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.google.cn/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.recaptcha.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.googleadservices.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.googletagmanager.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.fonts.gstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
-# Meta 系
+
+# ============================================================
+# Meta 系（隐私敏感，走 OpenDNS + Cloudflare）
+# ============================================================
 [/*.facebook.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.fbcdn.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.instagram.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 [/*.whatsapp.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.whatsapp.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.threads.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
 
-# 推特/X 系
+
+# ============================================================
+# Twitter / X（走 Quad9 + Cloudflare，注重隐私）
+# ============================================================
 [/*.twitter.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.twimg.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.x.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.t.co/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 
-# Telegram
+
+# ============================================================
+# Telegram（走 Quad9 + Cloudflare，注重隐私）
+# ============================================================
 [/*.telegram.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.t.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 [/*.telegram-cdn.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.telegra.ph/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
 
-# 微软国际服务
-[/*.bing.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.linkedin.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.skype.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
+# ============================================================
 # AI 服务
+# ============================================================
 [/*.openai.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.oaistatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.chatgpt.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.claude.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.anthropic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.gemini.google.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.deepseek.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.perplexity.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.mistral.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cohere.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.groq.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.grok.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.x.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
-# AWS
+
+# ============================================================
+# AWS / 云服务
+# ============================================================
 [/*.amazonaws.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.awsstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cloudfront.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
-# 社交/娱乐
-[/*.reddit.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.spotify.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.discord.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.tumblr.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.pinterest.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.medium.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.quora.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 
-# 国际邮箱
-[/*.protonmail.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.proton.me/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.tutanota.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-
-# 会议
-[/*.zoom.us/] https://cloudflare-dns.com/dns-query https://dns.quad9.net/dns-query
-
-# 网盘
-[/*.dropbox.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-
+# ============================================================
 # Cloudflare 系
+# ============================================================
 [/*.cloudflare.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.cloudflare-dns.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cloudfront.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.workers.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.pages.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 [/*.cloudflare-ipfs.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
-# 其他
-[/*.adobe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.wikipedia.org/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.imdb.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+
+# ============================================================
+# 社交 / 娱乐 / 社区
+# ============================================================
+[/*.reddit.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.redd.it/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.discord.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.discordapp.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.spotify.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.scdn.co/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.tumblr.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.pinterest.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.medium.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.quora.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.pixiv.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.v2ex.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.duolingo.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
-[/*.replit.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
 
 
-# 流媒体服务（海外版）
+# ============================================================
+# 国际邮箱（隐私邮件走 Quad9）
+# ============================================================
+[/*.protonmail.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.proton.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.tutanota.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.tuta.io/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+
+
+# ============================================================
+# 国际支付
+# ============================================================
+[/*.paypal.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.wise.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+
+
+# ============================================================
+# 流媒体（海外）
+# ============================================================
 [/*.netflix.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.nflxvideo.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.netflix.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.nflximg.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.nflximg.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.nflxext.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.disneyplus.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.disney-plus.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.hulu.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.hbomax.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.max.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.disneyplus.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.primevideo.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 [/*.twitch.tv/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.crunchyroll.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
 
 
-# ==========================================
-# 默认上游 DNS
-# ==========================================
+# ============================================================
+# 国际学术
+# ============================================================
+[/*.arxiv.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.researchgate.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.semanticscholar.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.sci-hub.se/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+
+
+# ============================================================
+# 其他常用国际服务
+# ============================================================
+[/*.zoom.us/] https://cloudflare-dns.com/dns-query https://dns.quad9.net/dns-query
+[/*.dropbox.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.adobe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.wikipedia.org/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.wikimedia.org/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.imdb.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.duolingo.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+
+
+# ============================================================
+# 默认上游 DNS（未匹配域名兜底）
+# 精简为4个，减少未匹配域名的查询延迟
+# ============================================================
+
+# 国内首选
 https://dns.alidns.com/dns-query
 https://doh.pub/dns-query
-https://doh.360.cn/dns-query
+
+# 国际备用
 https://cloudflare-dns.com/dns-query
-https://dns.quad9.net/dns-query
 https://dns.google/dns-query
-https://dns.opendns.com/dns-query
+
 # IPv6
 2400:3200::1
 2402:4e00::
