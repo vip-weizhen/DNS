@@ -397,211 +397,211 @@
 # ============================================================
 # GitHub（走国际DNS，抗污染）
 # ============================================================
-[/*.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubassets.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.github.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.github.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubapp.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.githubstatus.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.pkg.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.copilot.github.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.github.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.githubassets.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.github.io/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.githubusercontent.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.github.dev/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.githubapp.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.githubstatus.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.pkg.github.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.copilot.github.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 开发工具 / 包管理
 # ============================================================
-[/*.npmjs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.npmjs.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.pypi.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.docker.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.docker.io/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.golang.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.go.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.apache.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.nodejs.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.python.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.rubygems.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.gradle.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.maven.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.sonatype.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.jetbrains.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.gitlab.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.bitbucket.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.vercel.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.netlify.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.replit.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cursor.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.ipfs.tech/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.huggingface.co/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.npmjs.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.npmjs.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.pypi.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.docker.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.docker.io/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.golang.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.go.dev/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.apache.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.nodejs.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.python.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.rubygems.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.gradle.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.maven.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.sonatype.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.jetbrains.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.gitlab.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.bitbucket.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.vercel.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.netlify.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.replit.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.cursor.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.ipfs.tech/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.huggingface.co/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # Google 系
 # ============================================================
-[/*.google.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.googleapis.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.gstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.youtube.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.ytimg.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.googlevideo.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.googleusercontent.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.ggpht.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.google.cn/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.recaptcha.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.googleadservices.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.googletagmanager.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.fonts.gstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.google.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.googleapis.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.gstatic.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.youtube.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.ytimg.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.googlevideo.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.googleusercontent.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.ggpht.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.google.cn/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.recaptcha.net/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.googleadservices.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.googletagmanager.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.fonts.gstatic.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # Meta 系（隐私敏感，走 OpenDNS + Cloudflare）
 # ============================================================
-[/*.facebook.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.fbcdn.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.instagram.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.whatsapp.com/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.whatsapp.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
-[/*.threads.net/] https://dns.opendns.com/dns-query https://cloudflare-dns.com/dns-query
+[/*.facebook.com/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
+[/*.fbcdn.net/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
+[/*.instagram.com/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
+[/*.whatsapp.com/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
+[/*.whatsapp.net/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
+[/*.threads.net/] https://dns.opendns.com/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # Twitter / X（走 Quad9 + Cloudflare，注重隐私）
 # ============================================================
-[/*.twitter.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.twimg.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.x.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.t.co/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.twitter.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.twimg.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.x.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.t.co/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # Telegram（走 Quad9 + Cloudflare，注重隐私）
 # ============================================================
-[/*.telegram.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.t.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.telegram-cdn.org/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.telegra.ph/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.telegram.org/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.t.me/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.telegram-cdn.org/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.telegra.ph/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # AI 服务
 # ============================================================
-[/*.openai.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.oaistatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.chatgpt.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.claude.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.anthropic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.deepseek.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.perplexity.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.mistral.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cohere.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.groq.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.grok.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.x.ai/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.openai.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.oaistatic.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.chatgpt.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.claude.ai/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.anthropic.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.deepseek.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.perplexity.ai/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.mistral.ai/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.cohere.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.groq.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.grok.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.x.ai/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # AWS / 云服务
 # ============================================================
-[/*.amazonaws.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.awsstatic.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cloudfront.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.amazonaws.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.awsstatic.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.cloudfront.net/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # Cloudflare 系
 # ============================================================
-[/*.cloudflare.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cloudflare-dns.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.workers.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.pages.dev/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.cloudflare-ipfs.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.cloudflare.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.cloudflare-dns.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.workers.dev/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.pages.dev/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.cloudflare-ipfs.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 社交 / 娱乐 / 社区
 # ============================================================
-[/*.reddit.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.redd.it/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.discord.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.discordapp.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.spotify.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.scdn.co/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.tumblr.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.pinterest.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.medium.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.quora.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.pixiv.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.reddit.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.redd.it/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.discord.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.discordapp.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.spotify.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.scdn.co/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.tumblr.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.pinterest.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.medium.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.quora.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.pixiv.net/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 国际邮箱（隐私邮件走 Quad9）
 # ============================================================
-[/*.protonmail.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.proton.me/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.tutanota.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.tuta.io/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.protonmail.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.proton.me/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.tutanota.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.tuta.io/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 国际支付
 # ============================================================
-[/*.paypal.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.stripe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.wise.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.paypal.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.stripe.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.wise.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 流媒体（海外）
 # ============================================================
-[/*.netflix.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.nflxvideo.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.netflix.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.nflximg.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.nflximg.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.nflxext.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.disneyplus.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.disney-plus.net/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.hulu.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.hbomax.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.max.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.primevideo.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.twitch.tv/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.crunchyroll.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
+[/*.netflix.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflxvideo.net/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.netflix.net/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflximg.net/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflximg.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.nflxext.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.disneyplus.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.disney-plus.net/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.hulu.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.hbomax.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.max.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.primevideo.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.twitch.tv/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.crunchyroll.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
  
  
 # ============================================================
 # 国际学术
 # ============================================================
-[/*.arxiv.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.researchgate.net/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.semanticscholar.org/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.sci-hub.se/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.arxiv.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.researchgate.net/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.semanticscholar.org/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.sci-hub.se/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
 # 其他常用国际服务
 # ============================================================
-[/*.zoom.us/] https://cloudflare-dns.com/dns-query https://dns.quad9.net/dns-query
-[/*.dropbox.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.adobe.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.wikipedia.org/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.wikimedia.org/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.imdb.com/] https://cloudflare-dns.com/dns-query https://dns.opendns.com/dns-query
-[/*.stackoverflow.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.duolingo.com/] https://cloudflare-dns.com/dns-query https://dns.google/dns-query
+[/*.zoom.us/] https://dns.cloudflare.com/dns-query https://dns.quad9.net/dns-query
+[/*.dropbox.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.adobe.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.wikipedia.org/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.wikimedia.org/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.imdb.com/] https://dns.cloudflare.com/dns-query https://dns.opendns.com/dns-query
+[/*.stackoverflow.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.duolingo.com/] https://dns.cloudflare.com/dns-query https://dns.google/dns-query
 # 效率工具
-[/*.notion.so/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.notion.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.figma.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.linear.app/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
-[/*.obsidian.md/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.notion.so/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.notion.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.figma.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.linear.app/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
+[/*.obsidian.md/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
 # 密码管理
-[/*.1password.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.bitwarden.com/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
-[/*.bitwarden.eu/] https://dns.quad9.net/dns-query https://cloudflare-dns.com/dns-query
+[/*.1password.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.bitwarden.com/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
+[/*.bitwarden.eu/] https://dns.quad9.net/dns-query https://dns.cloudflare.com/dns-query
 # 网络工具
-[/*.tailscale.com/] https://dns.google/dns-query https://cloudflare-dns.com/dns-query
+[/*.tailscale.com/] https://dns.google/dns-query https://dns.cloudflare.com/dns-query
  
  
 # ============================================================
@@ -614,7 +614,7 @@ https://dns.alidns.com/dns-query
 https://doh.pub/dns-query
  
 # 国际备用
-https://cloudflare-dns.com/dns-query
+https://dns.cloudflare.com/dns-query
 https://dns.google/dns-query
  
 # IPv6
